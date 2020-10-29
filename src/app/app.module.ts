@@ -4,19 +4,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TraineeComponent } from './trainee/trainee.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { TrainerComponent } from './trainer/trainer.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TraineeComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, TraineeComponent, TrainerComponent],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
