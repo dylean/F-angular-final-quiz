@@ -1,0 +1,25 @@
+<section class="groups">
+  <header class="header">
+    <h2>分组列表</h2>
+    <button class="random-group" (click)="groupAllTraineeAndTrainer()">
+      分组学员
+    </button>
+  </header>
+  <main>
+    <div class="group" *ngFor="let group of groups">
+      <div class="group-name">
+        <span> {{ group.name }} </span>
+        <div class="trainer-content">
+          <p class="student" *ngFor="let trainer of group.trainers">
+            {{ trainer.id }}. {{ trainer.name }}
+          </p>
+        </div>
+      </div>
+      <div class="group-content">
+        <p class="student" *ngFor="let trainee of group.trainees">
+          {{ trainee.id }}. {{ trainee.name }}
+        </p>
+      </div>
+    </div>
+  </main>
+</section>

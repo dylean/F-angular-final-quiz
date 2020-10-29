@@ -18,6 +18,7 @@ export class TraineeComponent implements OnInit {
       .getUnGroupTrainees()
       .subscribe((trainees) => (this.trainees = [...trainees]));
   }
+
   ngOnInit(): void {
     this.getAllTrainees();
   }
