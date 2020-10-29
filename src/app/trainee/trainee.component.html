@@ -1,0 +1,17 @@
+<section class="students-list">
+  <h2>学员列表</h2>
+  <main class="main-list">
+    <p class="student" *ngFor="let trainee of trainees">
+      {{ trainee.id }}. {{ trainee.name }}
+    </p>
+    <p class="add-student" *ngIf="inputDisplay" (click)="displayInputButton()">
+      +添加学员
+    </p>
+    <input
+      class="add-student-input"
+      #box
+      (keyup.enter)="addNewTrainee(box.value)"
+      *ngIf="!inputDisplay"
+    />
+  </main>
+</section>
