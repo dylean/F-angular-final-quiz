@@ -24,6 +24,7 @@ export class TrainerComponent implements OnInit {
     this.getAllTrainers();
   }
 
+  // TODO GTB-4: - 命名和实现不一致，实现是toggle的逻辑
   displayInputButton(): void {
     this.inputDisplay = !this.inputDisplay;
   }
